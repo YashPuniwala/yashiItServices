@@ -1,0 +1,45 @@
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  padding: 2rem;
+  background-color: #003f8c;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  overflow: hidden;
+}
+
+/* svg {
+  display: inline-block;
+  position: absolute;
+  bottom: -30px; 
+  left: 0;
+  transform: rotate(0deg); 
+  width: 100%; 
+} */
+
+@media (max-width: 1024px) {
+  svg {
+    bottom: -5px; /* Adjust bottom position for tablets */
+  }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 768px) {
+  svg {
+    bottom: 0px; /* Align closer to the bottom on smaller screens */
+  }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 480px) {
+  svg {
+    bottom: -10px; /* Further adjust for very small screens */
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
